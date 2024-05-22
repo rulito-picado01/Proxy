@@ -15,4 +15,5 @@
       caché.
     - Proxy de registro: Es cuando quieres mantener un historial de solicitudes al objeto de servicio.
 - Fachada:
-    - Propósito: Proporcionar una interfaz simplificada por sobre un grupo complejo de clases.
+    - Propósito: Proporcionar una interfaz unificada para un conjunto de interfaces de un subsistema, haciéndolo más
+      fácil de usar.
