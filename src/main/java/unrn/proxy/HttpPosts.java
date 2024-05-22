@@ -11,6 +11,8 @@ import java.util.List;
 
 public class HttpPosts implements Posts {
 
+    public static final String TITLE = "title";
+    public static final String BODY = "body";
     private String url;
 
     public HttpPosts(String url) {
@@ -24,8 +26,8 @@ public class HttpPosts implements Posts {
         try (Response response = client.newCall(request).execute()) {
             JSONArray posts = new JSONArray(response.body().string());
             for (int i = 0; i < posts.length(); i++) {
-                postList.add(new Post(posts.getJSONObject(i).get("title").toString(),
-                        posts.getJSONObject(i).get("body").toString()));
+                postList.add(new Post(posts.getJSONObject(i).get(TITLE).toString(),
+                        posts.getJSONObject(i).get(BODY).toString()));
             }
             return postList;
         } catch (IOException e) {
