@@ -17,3 +17,5 @@
 - Fachada:
     - Propósito: Proporcionar una interfaz unificada para un conjunto de interfaces de un subsistema, haciéndolo más
       fácil de usar.
+    - Ejemplo de fachada, ese [objeto que representa el
+      sistema](https://github.com/enriquemolinari/oop2-layering/blob/main/src/main/java/model/DefaultEstacionDeServicio.java).
